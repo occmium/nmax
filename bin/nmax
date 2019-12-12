@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/nmax/executor'
+require_relative '../lib/nmax/show'
+
+show = Show.new
+nmax = Executor.new(STDIN, ARGV[0])
+nmax.perform
+show.summarize
+
+puts "\nЗавершено за #{show} сек.\n\n#{nmax}"

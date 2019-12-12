@@ -1,43 +1,69 @@
 # Nmax
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nmax`. To experiment with that code, run `bin/console` for an interactive prompt.
+Тестовое задание
 
-TODO: Delete this and the text above, and describe your gem
+#### Содержание
+  - *[Описание](#description)*
+  - *[Функционал](#update)*
+  - *[Использование](#use)*
+  - *[Требования](#version)*
 
-## Installation
+<a name="description"><h4>Описание</h4></a>
 
-Add this line to your application's Gemfile:
+Скрипт Nmax построчно читает входящий текстовый поток текстовых данных и формирует обыкновенный массив всех чисел, встретившихся в полученных текстовых данных. По завершении чтения выводит n самых больших целых частей чисел, встретившихся в полученных текстовых данных.
 
-```ruby
-gem 'nmax'
-```
+Пример запуска: 
 
-And then execute:
+`cat sample_data_40GB.txt | nmax 10000`
 
-    $ bundle
+[Наверх](#to_lift)
 
-Or install it yourself as:
+<a name="update"><h4>Функционал</h4></a>
+  * числом считается любая непрерывная последовательность цифр в тексте;
+  * числа длиннее 1000 цифр во входных данных не учитываются;
+  * число n это единственный и не обазательный параметр скрипта (принято значение по умолчанию);
+  * код покрыт тестами;
+  * код оформлен в виде гема, содержащего исполняемый файл, который станет доступен после установки гема;
+  
+[Наверх](#to_lift)
 
-    $ gem install nmax
+<a name="use"><h4>Использование</h4></a>
 
-## Usage
+Чтобы запустить скрипт, Вам потребуется установить на свою локальную машину гем nmax, скачав его из репозитория.
+  + скопируйте программу из репозитория: 
+    
+    `git clone git@github.com:occmium/nmax.git`
 
-TODO: Write usage instructions here
+  + перейдите в папку с программой: 
+  
+    `cd nmax`
+  
+  + для установки менеджера библиотек:
+  
+    `gem install bundler`
+  
+  + для запуска менеджера библиотек:
+  
+    `bundle`
+  
+  + для запуска тестов:
+    
+    `rspec`
+      
+  + для установки гема nmax:
+  
+    `gem install nmax`
+      
+  + для удаления гема nmax:
+ 
+    `gem uninstall nmax`
 
-## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+[Наверх](#to_lift)
+<a name="version"><h4>Требования</h4></a>
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+program|version
+:---:|:---:
+Ruby|2.5.5p157
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nmax. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Nmax project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/nmax/blob/master/CODE_OF_CONDUCT.md).
+[Наверх](#to_lift)
