@@ -1,4 +1,6 @@
-# Nmax
+<a name="to_lift"><h2>Nmax</h2></a>
+
+[![Build Status](https://travis-ci.org/occmium/nmax.svg?branch=master)](https://travis-ci.org/occmium/nmax)
 
 Тестовое задание
 
